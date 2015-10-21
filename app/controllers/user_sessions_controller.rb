@@ -5,6 +5,7 @@ class UserSessionsController < ApplicationController
 
   # omniauth callback method
   def create
+    binding.pry
     omniauth = env['omniauth.auth']
     logger.debug "+++ #{omniauth}"
 
